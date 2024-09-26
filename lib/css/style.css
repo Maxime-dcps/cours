@@ -1,0 +1,54 @@
+footer {
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* reste dans le bas */
+    bottom: 0; /*permet au footer de rester dans le bas */
+    width: 100%;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+.jaune {
+    background-color:lightyellow;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.blue {
+    background-color: lightcyan;
+}
+
+/* style pour media queries */
+
+@media all and (min-width: 1000px) {
+    .image_header {
+        background-image: url(../../images/banniere_iles.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 999px) {
+    .image_header {
+        background-image: url(../../images/banniere_tab.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media all and (max-width: 599px) {
+    .image_header {
+        background-color: #ccc; /* ou une couleur de ton choix */
+        /*background-image: url(../../images/banniere_mob.jpg);*/
+        background-image: url(../../images/banniere_mob.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+}
